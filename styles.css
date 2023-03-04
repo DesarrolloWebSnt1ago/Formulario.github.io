@@ -1,0 +1,159 @@
+body {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(90deg, rgb(200, 100,50), rgb(30, 100, 200));
+}
+
+form#formulario {
+    display: flex;
+    width: 300px;
+    height: 500px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    border: 3px solid whitesmoke;
+    box-shadow:  0px 5px 15px 5px black;
+    border-radius: 20px;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor {
+    display: flex;
+    margin: 10px;  
+    padding: 0px;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    height: auto;
+}
+
+.titulo {
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+header {
+    display: flex;
+}
+
+header > img {
+    width: 40px;
+    height: 40px;
+    align-self: center;
+}
+
+hr {
+    display: flex;
+    justify-content: start;
+    border-image: linear-gradient(40deg, rgb(250,150,100), rgb(250,250,100)) 1;
+    animation-name: barra;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+@keyframes barra {
+    0% {
+        width: 0%;
+    }
+    25% {
+        width: 25%;
+    }
+    50% {
+        width: 50%;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+
+.datos {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    grid-gap: 40px 10px;
+
+
+}
+.datos img {
+    width: 15px;
+    height: 15px;
+    opacity: 50%;
+    position: relative;
+    left: 10%;
+    top: 8px;
+}
+
+.datos .nombre {
+    display: flex;
+}
+
+.datos .apellido {
+    display: flex;
+    
+}
+
+.datos .email {
+    display: flex;
+    
+}
+
+.datos .contrasenia {
+    display: flex;
+    
+}
+
+.datos label {
+    margin-right: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.datos input {
+    border-top: none;
+    border-left: none;
+    background-color: rgb(250,250,250);
+    height: 20px;
+    padding: 0px 0px 10px 0px;
+}
+
+.datos input::placeholder {
+    position: relative;
+    left: 30%;
+    top: 30%;
+}
+
+.botones {
+    display: flex;
+    padding: 10px;
+    grid-gap: 30px;
+}
+
+.botones button {
+    background: linear-gradient(40deg, rgb(250,150,100), rgb(250,250,100));
+    border-radius: 20px;
+    border: none;
+    width: 100px;
+    height: 30px;
+}
+
+.botones button:hover {
+    background: linear-gradient(40deg, rgb(250,250,100), rgb(250,150,100));
+    transform: translate(5px, 5px);
+}
+
+.botones button a {
+    color: black;
+    text-decoration: none;
+}
+
+.redes a img {
+    width: 30px;
+    margin: 30px 10px 10px 10px;
+}
